@@ -1,46 +1,17 @@
 @font-face {
-  font-family: "FONTE" /* NOME DA FONTE */;
-  src: url("URL DA FONTE") format("/* TIPO DA FONTE (opentype/woff/...) */");
-  font-weight: 400;
-  font-display: swap; /* evita font-lag*/
-}
-@font-face {
-  font-family: "FONTE";
-  src: url("URL DA FONTE") format("/* TIPO DA FONTE (opentype/woff/...) */");
-  font-weight: 700;
-  font-display: swap;
+  font-family: mediumMontserrat;
+  src: url(/assets/fonts/Montserrat-Medium.ttf);
+  font-display: swap; 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-span,
-button,
-li {
-  font-family: "FONTE";
+@font-face {
+  font-family: semiBoldMontserrat;
+  src: url(/assets/fonts/Montserrat-SemiBold.ttf);
+  font-display: swap; 
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* DEFINIR PESOS */
-  font-weight: 500;
-}
-p,
-a,
-span,
-li {
-  /* DEFINIR PESOS */
-  font-weight: 400;
-}
-button {
-  /* DEFINIR PESOS */
-  font-weight: 700;
+
+@font-face {
+  font-family: BoldMontserrat;
+  src: url(/assets/fonts/Montserrat-Bold.ttf);
+  font-display: swap; 
 }

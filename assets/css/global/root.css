@@ -1,10 +1,13 @@
+/* CORES */
 :root {
-  /* VARIÁVEIS DO PROJETO */
+  --main-orange: #ff5f57;
+  --main-orange-hover: #E6564E;
+  --main-cream: #fff1c2;
+  --darker-blue: #0e1222;
+}
 
-  /* cores */
-  /* fontes-sizes */
-  /* borders */
-  /* shadows */
-  /* transitions */
-  /* etc... */
+/* FONTES */
+:root{
+  --font-h1: clamp(2rem, 1.1765rem + 3.1373vw, 4rem);
+  --font-p: clamp(1rem, 0.7941rem + 0.7843vw, 1.5rem);
 }
