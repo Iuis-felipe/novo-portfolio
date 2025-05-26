@@ -1,0 +1,91 @@
+#section-1 {
+  background-color: var(--darker-blue);
+  display: flex;
+  justify-content: center;
+}
+
+.sec-1-content {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 6%;
+}
+
+.sec-1-left h1 {
+  color: var(--main-orange);
+  font-size: clamp(2rem, 0rem + 6.6667vw, 6rem); /* 96px */
+  font-family: BoldMontserrat;
+}
+
+.sec-1-left h3 {
+  color: var(--main-cream);
+  font-family: mediumMontserrat;
+  font-size: clamp(1.25rem, 0.875rem + 1.25vw, 2rem); /* 32px */
+  max-width: 202px;
+}
+
+.sec-1-right {
+  max-width: 740px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.sec-1-right-title h2 {
+  font-family: semiBoldMontserrat;
+  font-size: clamp(1.25rem, 0.875rem + 1.25vw, 2rem); /* 32px */
+  color: var(--main-cream);
+}
+
+/* CARDS INICIO */
+.sec-1-right-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* opcional para espaçamento entre os cards */
+}
+
+.sec-1-card {
+  background-color: var(--main-cream);
+  color: var(--darker-blue);
+  padding: 20px;
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+}
+
+.sec-1-card:hover {
+  background-color: var(--main-orange);
+  color: var(--main-cream);
+  box-shadow: 4px 4px 0px var(--main-cream);
+}
+
+.sec-1-card p {
+  font-family: semiBoldMontserrat;
+}
+
+.sec-1-card i {
+  padding-top: 130px;
+}
+
+.sec-1-card i,
+.sec-1-card p {
+  font-size: 24px;
+}
+
+.sec-1-p-hover {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  color: var(--main-cream);
+  font-family: mediumMontserrat !important;
+  font-size: 16px !important;
+}
+
+.sec-1-p-hover {
+  opacity: 0.6;
+  visibility: visible;
+}
