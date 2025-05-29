@@ -9,5 +9,6 @@
 /* FONTES */
 :root{
   --font-h1: clamp(2rem, 1.1765rem + 3.1373vw, 4rem);
+  --font-h2: clamp(1.375rem, 0.5625rem + 2.7083vw, 3rem);
   --font-p: clamp(1rem, 0.7941rem + 0.7843vw, 1.5rem);
 }

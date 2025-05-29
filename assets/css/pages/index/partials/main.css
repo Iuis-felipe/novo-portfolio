@@ -12,6 +12,7 @@ main {
   padding: 0 6%;
   justify-content: space-between;
   max-width: 1440px;
+  gap: 1rem;
 }
 
 .main-left-content {
@@ -51,7 +52,7 @@ main {
   font-size: 24px;
 }
 
-.main-icons i:hover{
+.main-icons i:hover {
   background-color: var(--darker-blue);
 }
 
@@ -64,6 +65,9 @@ main {
 
 .main-right-content img {
   animation: float 4s ease-in-out infinite;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @keyframes float {
@@ -75,5 +79,23 @@ main {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-left-content {
+    max-width: 564px;
+  }
+  .main-left-content h1 {
+    line-height: 70px;
+  }
+  .main-left-content p {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-right-content img {
+    display: none;
   }
 }
