@@ -1,7 +1,10 @@
+/* Seus estilos existentes (mantidos para contexto) */
 #section-2 {
   background-color: var(--main-cream);
   display: flex;
   justify-content: center;
+  /* Adicione um preenchimento ou altura mínima se necessário para garantir que haja espaço para rolar e o sticky funcionar */
+  /* Exemplo: padding-bottom: 50vh; ou min-height: 150vh; */
 }
 
 .section-2-wrapper {
@@ -10,14 +13,18 @@
   width: 100%;
   padding: 0 6%;
   justify-content: space-between;
+  /* Se os cards e o texto tiverem alturas muito diferentes,
+     você pode querer alinhar os itens ao topo para o sticky começar do lugar certo */
+  align-items: flex-start; /* Adicionado para alinhar itens ao topo */
 }
 
 .sec-2-cards-wrapper {
   display: flex;
   gap: 2rem;
-  height: 600px;
-  overflow: hidden;
-  align-items: center;
+  height: 700px; /* Esta altura fixa é importante para o contexto visual */
+  overflow: hidden; /* Seus cards internos têm animação de scroll, este overflow é para eles */
+  align-items:center;
+  /* Você pode querer dar um flex-basis ou width para controlar o espaço que os cards ocupam */
 }
 
 .sec-2-col-1,
@@ -45,13 +52,24 @@
   display: block;
 }
 
+/* Estilos para .sec-2-txt com position: sticky */
 .sec-2-txt {
-  padding: 80px 0;
+  padding: 80px 0; /* O padding superior pode influenciar o valor de 'top' */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   max-width: 730px;
   text-align: end;
+
+  position: -webkit-sticky; /* Para compatibilidade com Safari */
+  position: sticky;
+  top: 80px;
+
+  align-self: flex-start;
+
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .sec-2-txt span {
@@ -75,6 +93,6 @@
 }
 
 .sec-2-txt-techs {
-    max-width: 500px;
+  max-width: 500px;
   font-size: 16px !important;
 }

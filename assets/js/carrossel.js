@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const translateY1 = newScrollPosition * speedFactor1;
       const translateY2 = -newScrollPosition * speedFactor2; // Note o negativo para direção oposta
       const sectionScrollProgress = (window.innerHeight - wrapperRect.top) / (window.innerHeight + wrapperRect.height);
-      const maxMovement = 400; // Por exemplo, 300px de movimento total para cada coluna
+      const maxMovement = 1200; // Por exemplo, 300px de movimento total para cada coluna
       col1.style.transform = `translateY(${sectionScrollProgress * maxMovement}px)`;
       col2.style.transform = `translateY(${-sectionScrollProgress * maxMovement}px)`;
     } else {
