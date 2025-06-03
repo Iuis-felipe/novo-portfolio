@@ -1,0 +1,152 @@
+/* Seu CSS existente (sem os comentários e com pequena correção no placeholder) */
+#section-4 {
+  background-color: var(--main-cream);
+  display: flex;
+  justify-content: center;
+}
+
+.section-4-wrapper {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  padding: 80px 6%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec-4-txt {
+  text-align: center;
+}
+
+.sec-4-txt span {
+  color: var(--main-orange);
+  font-family: BoldMontserrat;
+  font-size: 24px;
+}
+
+.sec-4-txt h2 {
+  font-size: var(--font-h2);
+  font-family: BoldMontserrat;
+  max-width: 770px;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: var(--darker-blue);
+}
+
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 20px;
+  background-color: var(--main-orange);
+  box-sizing: border-box;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.contact-image-placeholder {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--image-placeholder-bg); /* Cor de fundo caso a imagem não carregue ou tenha transparência */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; /* Aplica 20px de margem em todos os lados, dentro do .contact-form-container laranja */
+  box-sizing: border-box;
+  overflow: hidden; /* Garante que a imagem com object-fit:cover não exceda as bordas arredondadas, se houver */
+}
+
+/* NOVO: Estilos para a imagem dentro do placeholder */
+.contact-image-placeholder img {
+  display: block; /* Remove espaços extras abaixo da imagem */
+  width: 100%; /* Faz a imagem tentar preencher a largura do placeholder */
+  height: 100%; /* Faz a imagem tentar preencher a altura do placeholder */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura */
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura */
+  object-fit: cover; /* Redimensiona a imagem para manter sua proporção enquanto preenche o espaço do elemento.
+                        A imagem será cortada para caber, se necessário.
+                        Alternativas:
+                        'contain' - Mostra a imagem inteira, pode deixar espaços vazios.
+                        'scale-down' - Escolhe entre 'contain' ou o tamanho original, o que resultar em imagem menor. */
+}
+
+.contact-form-content {
+  flex: 1.5;
+  min-width: 320px;
+  background-color: var(--main-orange);
+  padding: 20px;
+  box-sizing: border-box;
+  color: var(--white);
+  font-family: mediumMontserrat;
+}
+
+.contact-form-content form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-family: semiBoldMontserrat;
+}
+
+.contact-form-content input[type="text"],
+.contact-form-content input[type="email"],
+.contact-form-content textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: var(--font-regular, "Arial", sans-serif);
+}
+
+.contact-form-content input[type="text"]::placeholder,
+.contact-form-content input[type="email"]::placeholder,
+.contact-form-content textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form-content textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form-content button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  font-size: 24px;
+  font-family: BoldMontserrat;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form-content button[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--main-orange);
+}
+
+@media screen and (max-width: 900px) {
+  .contact-form-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contact-image-placeholder {
+    /* margin-right: 0; /* Não é mais necessário se usando 'margin: 20px' e o container é column */
+    margin: 10px; /* Ajusta a margem para telas menores se desejar */
+    margin-bottom: 20px;
+    min-height: 200px;
+  }
+
+  .contact-form-content {
+    padding: 20px;
+  }
+}

@@ -54,15 +54,22 @@
 
   <body>
     <header>
-      <nav>
-        <a href="/index.html"><img src="/assets/images/logos/logo-black.svg" alt="" /></a>
-        <ul>
+      <nav id="navbar">
+        <a href="/index.html" class="logo"><img src="/assets/images/logos/logo-black.svg" alt="Logo da Empresa" /></a>
+
+        <div class="menu-toggle" id="mobile-menu-trigger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-menu">
           <li><a class="nav-links" href="">Home</a></li>
           <li><a class="nav-links" href="">Projetos</a></li>
           <li><a class="nav-links" href="">Sobre</a></li>
           <li><a class="nav-links" href="">Currículo</a></li>
         </ul>
-        <a class="header-btn" href="#">Contato</a>
+        <a class="header-btn main-contact-btn" href="#">Contato</a>
       </nav>
     </header>
     <main>
@@ -201,15 +208,14 @@
             <div class="sec-2-circle">
               <img src="/assets/images/icons/react-icon.svg" alt="Icone React" />
             </div>
-          
           </div>
         </div>
         <div class="sec-2-txt">
           <span>O que uso?</span>
           <h2>Tecnologias e Softwares que Utilizo</h2>
           <p>
-            Ao lado estão presente as tecnologias e Softwares que já utilizei (e ainda utilizo) para o desenvolvimento
-            de projetos. Sejam eles pessoais ou para empresas que faço freelances.
+            Aqui estão presente as tecnologias e Softwares que já utilizei (e ainda utilizo) para o desenvolvimento de
+            projetos. Sejam eles pessoais ou para empresas que faço freelances.
           </p>
           <p class="sec-2-txt-techs">
             <b>São elas:</b> <br />
@@ -220,7 +226,131 @@
       </div>
     </section>
 
-    
+    <section id="section-3">
+      <div class="section-3-wrapper">
+        <div class="sec-3-txt">
+          <span>Onde apliquei?</span>
+          <h2>Minha experiência profissional com desenvolvimento</h2>
+        </div>
+        <div class="sec-3-cards">
+          <a href="https://startcafe.com.br/" target="_blank">
+            <img src="/assets/images/logos/start-cafe.svg" alt="" />
+          </a>
+          <a href="https://novadevelopment.com.br/" target="_blank">
+            <img src="/assets/images/logos/nova-developments.svg" alt="" />
+          </a>
+          <a href="https://www.smartsis.com/" target="_blank">
+            <img src="/assets/images/logos/smart-sistemas.svg" alt="" />
+          </a>
+          <a href="https://useall.com.br/" target="_blank">
+            <img src="/assets/images/logos/useall-softwares.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-4">
+      <div class="section-4-wrapper">
+        <div class="sec-4-txt">
+          <span>Entre em contato comigo</span>
+          <h2>Formulário para contato</h2>
+        </div>
+
+        <div class="contact-form-container">
+          <div class="contact-image-placeholder">
+            <img src="./assets/images/steam2.jpg" alt="Descrição da imagem para acessibilidade" />
+          </div>
+          <div class="contact-form-content">
+            <form action="https://formspree.io/f/mpwrzenb" method="POST">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="Nome" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="E-mail" required />
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="Mensagem" rows="6" required></textarea>
+              </div>
+              <button type="submit">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-section">
+          <h2>Empresas Neste</h2>
+          <ul>
+            <li>
+              <a target="_blank" href="https://startcafe.com.br/">Start Café</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/_novadevelopment/">Nova Development</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.gumpee.com.br/">Gumpee</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/gohypeclan/">Hype Pro</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2>Redes</h2>
+          <ul>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/lu%C3%ADs-felipe-mattos-4439a923b/">LinkedIn</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/luisfmds/">Instagram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://wa.me/5548996077311?text=Olá%20vim%20pelo%20site%20do%20seu%20portfólio!"
+                >WhatsApp</a
+              >
+            </li>
+            <li><a href="mailto:luisfmds03@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2>Curiosos</h2>
+          <ul>
+            <li>
+              <a href="https://steamcommunity.com/id/lusfepile/">Steam</a>
+            </li>
+            <li><a href="https://www.twitch.tv/lllu_s">Twitch</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2>Para baixar</h2>
+          <ul>
+            <li>
+              <a href="/assets/pdf/design-homepage.pdf" download="design-homepage.pdf">Design Home Page</a>
+            </li>
+            <li>
+              <a
+                href="/assets/pdf/curriculo-luisfelipemattosdasilva.pdf"
+                download="curriculo-luisfelipemattosdasilva.pdf"
+                >Curriculo</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Inglês (Intermediario)</li>
+            <li>Português (Nativo)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">Luís Felipe Mattos da Silva - Todos os direitos reservados</div>
+    </footer>
     <script src="/assets/js/carrossel.js"></script>
+    <script src="/assets/js/header.js"></script>
   </body>
 </html>
